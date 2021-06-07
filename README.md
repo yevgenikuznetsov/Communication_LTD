@@ -10,7 +10,7 @@ A web system for a communications company called Comunication_LTD, this company 
 
 ## Project objectives:
 * Creating a connection using the TLS 1.2 protocol.
-* Use of self-signed certificate.
+* Use of self-signed certificate (open-ssl).
 * Complex password settings and requirements will be managed using a configuration file.
 * Send an email to the user in case he forgot his password.
 * Using sqli and XSS techniques
