@@ -1,9 +1,3 @@
-# Communication LTD
-
-![image](https://user-images.githubusercontent.com/70342090/119259433-fc95c000-bbd6-11eb-80a7-31b36cbae7d1.png)
-![image](https://user-images.githubusercontent.com/70342090/119259439-05869180-bbd7-11eb-98b5-e3886e03a167.png)
-
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
 ## Development server
