@@ -1,0 +1,40 @@
+<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+      <div class="card register-card">
+        <div class="row no-gutters">
+            <div class="card-body" style="margin-left: 10%;">
+              <div class="brand-wrapper">
+                <p class="reg-titel">Add New Client:</p>
+              </div>
+              <form [formGroup]="registerClientForm" (ngSubmit)="onSubmitRegisterClient()" style="margin-left: 25%; margin-top: 50px;">
+                  <div class="form-group">
+                    <label for="id" class="sr-only">ID</label>
+                    <input formControlName="idRegFormControl" type="text" name="id" id="id" class="form-control" placeholder="Client ID">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="sr-only">Clinet name</label>
+                    <input formControlName="nameRegFormControl" type="text" name="name" id="name" class="form-control" placeholder="Client Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName" class="sr-only">Client last name</label>
+                    <input formControlName="lastNameRegFormControl" type="text" name="lastName" id="lastName" class="form-control" placeholder="Client Last Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="sr-only">Client Phone Number</label>
+                    <input formControlName="phoneRegFormControl" type="text" name="phone" id="phone" class="form-control" placeholder="Client Phone Number">
+                  </div>
+                  <div class="error">
+                    {{errorMsg}}
+                  </div>
+                  <input name="register" id="register" class="btn btn-block register-btn" style="margin-top: 30px;margin-bottom: 60px;" type="submit" value="Submit">
+                </form>
+
+                <hr style="margin-right: 10%;">
+                <p id= "demo" style="display:inline-block;"></p>
+                <p *ngIf="showClientName" style="font-weight: bold; font-size: 20px;display:inline-block;">{{clientName}}</p>
+                <p *ngIf="showClientName">added successfully </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
